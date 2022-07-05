@@ -1,0 +1,266 @@
+*{
+  margin: 0;
+  padding:0 ;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+  }
+
+  @media(min-width:600px){
+    p{
+      font-size:1.25rem;
+    }
+  }
+
+  /* Med screens- go to w3 */
+  @media all and(max-width:800px) {
+    #home#AboutMe#Work#ContactMe.main.headings.projects.project.navbar{
+      justify-content: space-around;
+    }
+  }
+  /* small screens */
+@media all and(max-width:500px) {
+  #home#AboutMe#Work#ContactMe.main.headings.projects.navbar{
+    flex-direction: column;
+}
+}
+/* navbar */
+.navbar{
+  display: flex;
+  justify-content:center ;
+  align-items: center;
+  background-color:rgba(0,0,0,0.5);
+  position: sticky;
+  top: 0;
+  margin-bottom:0px
+}
+.navbar ul{
+display: flex;
+list-style: none;
+margin: 20px 0px ;
+}
+
+.navbar ul li{
+  font-family:Dekko;
+  font-size:1.1rem;
+  font-weight: bold;
+}
+.navbar ul li a{
+  text-decoration: none;
+  transition: all .5s ease;
+  color: honeydew;
+  padding: 8px 25px;
+}
+.navbar ul li a:hover{
+  background-color:honeydew;
+  color:black;
+  box-shadow: 0 0 10px gray;
+}
+
+/* Home area * https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-examples//*  */
+
+#Home{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: rgba(0,0,0,0);
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  
+}
+
+#Home:before{
+  max-width: 1250px;
+  margin: 0 auto;
+  content:"";
+  position: absolute;
+  top: 0;
+  right:0;
+  background:url(./Images/img1.jpg) no-repeat center center/cover;
+  background-position: 0 20px 0 0;
+  border:3px solid black;
+  height: 500px;
+  width: 100%;
+  z-index:-1 ;
+  opacity: .8;
+}
+
+.main{
+  display: flex;
+  width:40%;
+  font-size: x-large;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  flex-direction: column;
+  /* border area whitesmoke 1px */
+  border:2px solid black;
+  background-color:honeydew; 
+  letter-spacing: 2px;
+  align-items: center;
+  position:absolute;
+  top: 55%;
+  right: 30%;
+}
+/* headings */
+.headings{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+  border: 1px #ccc solid;
+  padding: 1em;
+  flex:9;
+}
+.btn{
+ padding: 10px 35px;
+ background-color: transparent;
+ border: 1px solid;
+ color: white;
+ outline:none;
+transition: .6s ease 
+}
+
+.btn:hover{
+  cursor: pointer;
+  background-color: beige;
+  color: black;
+  box-shadow: 0 0 5px blanchedalmond, 0 0 10px blanchedalmond,0 0 15px blanchedalmond;
+  font-weight:bold ;
+
+}
+
+.headings{
+font-size:3.5rem;  
+
+}
+.headings {
+  padding: 0;
+  margin: 0;
+  height: auto;
+  overflow:auto;
+  width:300px;
+  margin:auto ;
+  margin-top: 1vh;
+  text-align: center;
+  margin-bottom: 1vh;
+  vertical-align:top;
+}
+.btn h2 img{
+  width: 100%;
+  height: 70%;
+}
+/* section-about me  */
+#AboutMe{
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align:match-parent;
+  display: inside;
+  flex-wrap:wrap;
+  flex-direction:initial;
+  box-sizing:border-box ; 
+  border:2px solid black;
+  padding: 20px;
+  top: 0%;
+  left:0%; ;
+  right: 30%;
+  margin-bottom: 50px;
+  background-color: rgba(189, 181, 181, 0.9);
+  background:linear-gradient(to top);color:black}
+/* The way that the profile picture look */
+#picture{
+  display: flex;
+  border-radius: 15px;
+
+}
+
+#picture img{
+  width:50%;
+  height: 50%; 
+  
+}
+
+/* introduction section */
+#Introduction{
+  display: flex;
+  flex-direction:column;
+  text-align:justify;
+  padding: 10px;
+  top: 0%;
+  left:0%; ;
+  right: 30%;
+}
+
+#Introduction h2{
+  font-size: 2rem;
+  margin-bottom: 20px;
+  padding: 0px;
+  top: 0%;
+  left:0%; ;
+  right: 30%;
+
+
+} 
+/* Work section( look at w3 website for help */
+#Work {
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: center;
+  display: flex;
+  border:3px solid black;
+  flex-wrap: wrap;
+  flex-direction: initial;
+  background-color: rgba(189, 181, 181, 0.9);
+  color: black;
+  align-items: center;
+  padding: 20px;
+}
+.projects{
+  display:flex;
+  flex-direction: column;
+  border:2px solid black;
+  gap: 1rem;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around ;
+  box-sizing: border-box;
+}
+
+.projects img{
+  width: 400px;
+  height: 140px;
+  margin: 10px;
+}
+
+.projects{
+display: flex;
+flex-direction: column;
+border-radius: 15px;
+}
+.projects btn h2{
+  display: flex;
+  justify-content: flex-start;
+  border:2px solid black;
+}
+/* contact sections- cut and paste fro Module 1 */
+#ContactMe{
+  max-width: 1100px;
+  margin: 0 auto;
+  margin-top: 4rem;
+  text-align: center;
+  display:flex ;
+  flex-wrap:wrap;
+  flex-direction:column;
+  border:2px solid black;
+  box-sizing:border-box ;
+  background-color: rgba(189, 181, 181, 0.9);
+  color: black;
+  padding: 20px;
+  border-radius: 15px;
+}
+#ContactMe p p{
+  display: flex;
+  font-size:x-large;
+}
