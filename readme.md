@@ -4,7 +4,6 @@ Challenge 2 is due July 5
 
 ## This demonstrates the design, accessibility and functionality portfolio
 
-Test text
  Desciption:
  This project provides a basic understanding of CSS and HTML. Students have to make an Original Personal Portfolio that includes:
  -Developer's name, a recent photo or avatar, and links to sections about them, their work, and how to contact them.
