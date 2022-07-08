@@ -1,7 +1,8 @@
 # L Collins Challenge Two
 
  Repo-https://github.com/Collins418/LCollins-Challenge-2
- Deploy-
+ 
+ Deploy-https://collins418.github.io/LCollins-Challenge-2/
  
 Challenge 2 is due July 5
 
