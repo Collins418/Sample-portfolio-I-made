@@ -2,7 +2,7 @@
 
  Repo-https://github.com/Collins418/LCollins-Challenge-2
  
- Deploy-https://collins418.github.io/LCollins-Challenge-2/
+ Deploy- https://collins418.github.io/Sample-portfolio-I-made/
  
 Challenge 2 is due July 5
 
